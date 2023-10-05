@@ -17,10 +17,12 @@ defmodule ExLang do
              |> Map.new()
 
   # Github: https://gist.github.com/ssskip/5a94bfcd2835bf1dea52
+  @app_territories Application.compile_env(:ex_lang, :territories, %{})
   @territories :code.priv_dir(:ex_lang)
                |> Path.join("ISO3166-1.alpha2.json")
                |> File.read!()
                |> Jason.decode!()
+               |> Map.merge(@app_territories)
 
   @doc """
   Parses a locale into a struct.
