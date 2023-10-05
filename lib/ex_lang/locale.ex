@@ -1,4 +1,4 @@
 defmodule ExLang.Locale do
   @enforce_keys [:code]
-  defstruct [:code, :territory]
+  defstruct [:code, :script, :territory]
 end

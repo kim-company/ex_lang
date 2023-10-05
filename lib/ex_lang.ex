@@ -39,6 +39,9 @@ defmodule ExLang do
       iex> parse!("ger")
       ~L"ger"
 
+      iex> parse!("yue-Hant-HK")
+      ~L"yue-Hant-HK"
+
   """
   def parse!(locale) when is_binary(locale) do
     case String.split(locale, "-") do
@@ -47,6 +50,9 @@ defmodule ExLang do
 
       [code, territory] ->
         %Locale{code: String.downcase(code), territory: String.upcase(territory)}
+
+      [code, script, territory] ->
+        %Locale{code: String.downcase(code), script: script, territory: String.upcase(territory)}
     end
   end
 
