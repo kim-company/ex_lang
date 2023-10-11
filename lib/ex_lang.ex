@@ -152,4 +152,21 @@ defmodule ExLang do
   defp territory_label(%Locale{territory: territory}) do
     Map.get(territories(), territory) || raise "Territory code #{territory} not found."
   end
+
+  @doc """
+  Lists all known ISO639-3 languages to Locales, ordered alphabetically by their language code
+
+      iex> ~L"deu" in iso6393_languages()
+      true
+
+      iex> ~L"eng" in iso6393_languages()
+      true
+
+  """
+  def iso6393_languages() do
+    languages()
+    |> Map.keys()
+    |> Enum.sort()
+    |> Enum.map(&%Locale{code: &1})
+  end
 end
