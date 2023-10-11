@@ -114,6 +114,9 @@ defmodule ExLang do
     end
   end
 
+  defp languages(), do: @languages
+  defp territories(), do: @territories
+
   @doc """
   Converts any tag to ISO639-3.
 
@@ -133,13 +136,13 @@ defmodule ExLang do
 
   """
   def to_iso6393(%Locale{code: code}) do
-    @languages
+    languages()
     |> Map.fetch!(code)
     |> Map.fetch!(:iso6393)
   end
 
   defp code_label(%Locale{code: code}) do
-    @languages
+    languages()
     |> Map.fetch!(code)
     |> Map.fetch!(:name)
   end
@@ -147,6 +150,6 @@ defmodule ExLang do
   defp territory_label(%Locale{territory: nil}), do: nil
 
   defp territory_label(%Locale{territory: territory}) do
-    Map.get(@territories, territory) || raise "Territory code #{territory} not found."
+    Map.get(territories(), territory) || raise "Territory code #{territory} not found."
   end
 end
