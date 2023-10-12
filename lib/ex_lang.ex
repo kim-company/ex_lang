@@ -164,9 +164,9 @@ defmodule ExLang do
 
   """
   def iso6393_languages() do
-    languages()
-    |> Map.keys()
-    |> Enum.sort()
-    |> Enum.map(&%Locale{code: &1})
+    for {_, entry} <- @languages,
+        is_binary(entry[:iso6391]),
+        uniq: true,
+        do: %Locale{code: entry.iso6393}
   end
 end
