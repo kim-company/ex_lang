@@ -141,6 +141,27 @@ defmodule ExLang do
     |> Map.fetch!(:iso6393)
   end
 
+  @doc """
+  Attempts to create an RFC3066 compliant language description. If the code
+  is expressed in iso6393 form, it probably creates an invalid tag.
+
+  ## Examples
+
+      iex> to_rfc3066(~L"de-DE")
+      "de-DE"
+
+      iex> to_rfc3066(~L"de")
+      "de"
+
+      iex> to_rfc3066(~L"yue-Hant-HK")
+      "yue-Hant-HK"
+  """
+  def to_rfc3066(%Locale{code: code, territory: territory, script: script}) do
+    [code, script, territory]
+    |> Enum.filter(fn x -> x != nil end)
+    |> Enum.join("-")
+  end
+
   defp code_label(%Locale{code: code}) do
     languages()
     |> Map.fetch!(code)
