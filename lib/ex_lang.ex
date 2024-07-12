@@ -96,6 +96,9 @@ defmodule ExLang do
       iex> label(~L"deu")
       "German"
 
+      iex> label(~L"zh-HANS")
+      "Chinese"
+
       iex> label(~L"en")
       "English"
 
@@ -171,7 +174,7 @@ defmodule ExLang do
   defp territory_label(%Locale{territory: nil}), do: nil
 
   defp territory_label(%Locale{territory: territory}) do
-    Map.get(territories(), territory) || raise "Territory code #{territory} not found."
+    Map.get(territories(), territory)
   end
 
   @doc """
