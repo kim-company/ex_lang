@@ -24,6 +24,8 @@ defmodule ExLang do
                |> Jason.decode!()
                |> Map.merge(@app_territories)
 
+  @scripts %{"Hant" => "Traditional", "Hans" => "Simplified"}
+
   @doc """
   Parses a locale into a struct.
 
@@ -50,8 +52,12 @@ defmodule ExLang do
       [code] ->
         %Locale{code: String.downcase(code)}
 
+      [code, script] when byte_size(script) == 4 ->
+        %Locale{code: String.downcase(code), script: String.capitalize(script)}
+
       [code, territory] ->
         %Locale{code: String.downcase(code), territory: String.upcase(territory)}
+
 
       [code, script, territory] ->
         %Locale{code: String.downcase(code), script: script, territory: String.upcase(territory)}
@@ -96,8 +102,17 @@ defmodule ExLang do
       iex> label(~L"deu")
       "German"
 
-      iex> label(~L"zh-HANS")
+      iex> label(~L"zh")
       "Chinese"
+
+      iex> label(~L"zh-HANS")
+      "Chinese (Simplified)"
+
+      iex> label(~L"zh-HANT")
+      "Chinese (Traditional)"
+
+      iex> label(~L"yue-Hant-HK")
+      "Yue Chinese (Traditional - Hong Kong)"
 
       iex> label(~L"en")
       "English"
@@ -109,9 +124,16 @@ defmodule ExLang do
   def label(%Locale{} = tag) do
     code = code_label(tag)
     territory = territory_label(tag)
+    script = script_label(tag)
 
-    if territory != nil do
-      "#{code} (#{territory})"
+    hint =
+      [script, territory]
+      |> Enum.reject(&is_nil/1)
+      |> Enum.join(" - ")
+
+
+    if hint != "" do
+      "#{code} (#{hint})"
     else
       code
     end
@@ -176,6 +198,9 @@ defmodule ExLang do
   defp territory_label(%Locale{territory: territory}) do
     Map.get(territories(), territory)
   end
+
+  defp script_label(%Locale{script: nil}), do: nil
+  defp script_label(%Locale{script: script}), do: Map.get(@scripts, script)
 
   @doc """
   Lists all known ISO639-3 languages to Locales, ordered alphabetically by their language code
