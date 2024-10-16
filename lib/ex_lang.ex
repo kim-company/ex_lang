@@ -52,7 +52,7 @@ defmodule ExLang do
       [code] ->
         %Locale{code: String.downcase(code)}
 
-      [code, script] when byte_size(script) == 4 ->
+      [code, <<script::binary-size(4)>>] ->
         %Locale{code: String.downcase(code), script: String.capitalize(script)}
 
       [code, territory] ->
