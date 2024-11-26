@@ -1,12 +1,17 @@
 defmodule ExLang.MixProject do
   use Mix.Project
 
+  @github_url "https://github.com/kim-company/ex_lang"
+
   def project do
     [
       app: :ex_lang,
-      version: "0.1.0",
+      version: "1.0.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
+      name: "ExLang",
+      description: description(),
+      package: package(),
       deps: deps()
     ]
   end
@@ -21,5 +26,20 @@ defmodule ExLang.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [{:jason, "~> 1.4"}]
+  end
+
+  defp package do
+    [
+      maintainers: ["KIM Keep In Mind"],
+      files: ~w(lib priv mix.exs README.md LICENSE),
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => @github_url}
+    ]
+  end
+
+  defp description do
+    """
+    Library designed to parse and convert language and locale codes based on ISO 639-3 and RFC 3066 standards.
+    """
   end
 end
