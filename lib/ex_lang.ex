@@ -4,6 +4,25 @@ defmodule ExLang do
   @external_resource "priv/iso6393.json"
   @external_resource "priv/ISO3166-1.alpha2.json"
 
+  # https://en.wikipedia.org/wiki/Right-to-left_script#Current_scripts
+  @right_to_left_aligned [
+    "ar",
+    "fa",
+    "ur",
+    "ks",
+    "pa",
+    "az",
+    "ms",
+    "ml",
+    "ckb",
+    "pa",
+    "sd",
+    "jv",
+    "so",
+    "he",
+    "yi"
+  ]
+
   # Github: https://github.com/wooorm/iso-639-3/blob/main/iso6393.js
   @languages :code.priv_dir(:ex_lang)
              |> Path.join("iso6393.json")
@@ -193,4 +212,23 @@ defmodule ExLang do
         uniq: true,
         do: %Locale{code: entry.iso6393}
   end
+
+  @doc """
+  Returns the text alignment.
+
+  ## Examples
+      iex> alignment(~L"ar")
+      :right_to_left
+
+      iex> alignment(~L"he")
+      :right_to_left
+
+      iex> alignment(~L"en")
+      :left_to_right
+
+      iex> alignment(~L"en-GB")
+      :left_to_right
+  """
+  def alignment(%Locale{code: code}) when code in @right_to_left_aligned, do: :right_to_left
+  def alignment(_), do: :left_to_right
 end
