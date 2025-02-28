@@ -6,8 +6,8 @@ defmodule ExLang.MixProject do
   def project do
     [
       app: :ex_lang,
-      version: "1.0.1",
-      elixir: "~> 1.12",
+      version: "2.0.0",
+      elixir: "~> 1.18.1",
       start_permanent: Mix.env() == :prod,
       name: "ExLang",
       description: description(),
@@ -26,7 +26,6 @@ defmodule ExLang.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:jason, "~> 1.4"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
