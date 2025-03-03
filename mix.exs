@@ -41,7 +41,7 @@ defmodule ExLang.MixProject do
 
   defp description do
     """
-    Library designed to parse and convert language and locale codes based on ISO 639-3 and RFC 3066 standards.
+    Library designed to parse and convert language and locale codes based on BCP47.
     """
   end
 end
