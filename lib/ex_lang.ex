@@ -11,6 +11,7 @@ defmodule ExLang do
   end
 
   @external_resource "priv/ISO3166-1.alpha2.json"
+  @external_resource "priv/ISO15924.json"
 
   # Github: https://gist.github.com/ssskip/5a94bfcd2835bf1dea52
   @app_territories Application.compile_env(:ex_lang, :territories, %{})
@@ -24,7 +25,7 @@ defmodule ExLang do
   # https://unicode.org/iso15924/iso15924-codes.html
   @app_scripts Application.compile_env(:ex_lang, :scripts, %{})
   @scripts :code.priv_dir(:ex_lang)
-           |> Path.join("iso15924.json")
+           |> Path.join("ISO15924.json")
            |> File.read!()
            |> JSON.decode!()
            |> Enum.reduce(%{}, fn %{"code" => code, "label" => label}, acc ->
@@ -125,6 +126,26 @@ defmodule ExLang do
     else
       code
     end
+  end
+
+  @doc """
+  Returns the text alignment.
+
+  ## Examples
+      iex> alignment(~L"ar")
+      :rtl
+
+      iex> alignment(~L"he")
+      :rtl
+
+      iex> alignment(~L"en")
+      :ltr
+
+      iex> alignment(~L"de-DE")
+      :ltr
+  """
+  def alignment(%Locale{primary: code}) do
+    ISO639.alignment(code)
   end
 
   defp primary_label(%Locale{primary: code}) do
@@ -250,133 +271,4 @@ defmodule ExLang do
         parse_recursive!(tag, locale, rest, tags)
     end
   end
-
-  #   # https://en.wikipedia.org/wiki/Right-to-left_script#Current_scripts
-  #   @right_to_left_aligned [
-  #     "ar",
-  #     "fa",
-  #     "ur",
-  #     "ks",
-  #     "pa",
-  #     "az",
-  #     "ms",
-  #     "ml",
-  #     "ckb",
-  #     "pa",
-  #     "sd",
-  #     "jv",
-  #     "so",
-  #     "he",
-  #     "yi"
-  #   ]
-
-  #   @scripts %{"Hant" => "Traditional", "Hans" => "Simplified"}
-
-  #   @doc """
-  #   Returns a list of matching language tags based on the inserted tag.
-
-  #   ## Examples
-
-  #       iex> filter([~L"de-DE", ~L"de-CH", ~L"deu", ~L"en-US"], ~L"de")
-  #       [~L"de-DE", ~L"de-CH", ~L"deu"]
-
-  #       iex> filter([~L"de-DE", ~L"de-CH", ~L"deu", ~L"en-US"], ~L"ger")
-  #       [~L"de-DE", ~L"de-CH", ~L"deu"]
-
-  #       iex> filter([~L"de-DE", ~L"de-CH"], ~L"de-DE")
-  #       [~L"de-DE"]
-
-  #   """
-  #   def filter(tags, filter_tag) do
-  #     Enum.filter(tags, fn tag ->
-  #       matches_territory? = is_nil(filter_tag.territory) || filter_tag.territory == tag.territory
-  #       matches_code? = to_iso6393(filter_tag) == to_iso6393(tag)
-
-  #       matches_territory? && matches_code?
-  #     end)
-  #   end
-
-  #   defp languages(), do: @languages
-  #   defp territories(), do: @territories
-
-  #   @doc """
-  #   Converts any tag to ISO639-3.
-
-  #   ## Examples
-
-  #       iex> to_iso6393(~L"de-DE")
-  #       "deu"
-
-  #       iex> to_iso6393(~L"ger")
-  #       "deu"
-
-  #       iex> to_iso6393(~L"de")
-  #       "deu"
-
-  #       iex> to_iso6393(~L"en")
-  #       "eng"
-
-  #   """
-  #   def to_iso6393(%Locale{code: code}) do
-  #     languages()
-  #     |> Map.fetch!(code)
-  #     |> Map.fetch!(:iso6393)
-  #   end
-
-  #   @doc """
-  #   Attempts to create an RFC3066 compliant language description. If the code
-  #   is expressed in iso6393 form, it probably creates an invalid tag.
-
-  #   ## Examples
-
-  #       iex> to_rfc3066(~L"de-DE")
-  #       "de-DE"
-
-  #       iex> to_rfc3066(~L"de")
-  #       "de"
-
-  #       iex> to_rfc3066(~L"yue-Hant-HK")
-  #       "yue-Hant-HK"
-  #   """
-  #   def to_rfc3066(%Locale{code: code, territory: territory, script: script}) do
-  #     [code, script, territory]
-  #     |> Enum.filter(fn x -> x != nil end)
-  #     |> Enum.join("-")
-  #   end
-
-  #   @doc """
-  #   Lists all known ISO639-3 languages to Locales, ordered alphabetically by their language code
-
-  #       iex> ~L"deu" in iso6393_languages()
-  #       true
-
-  #       iex> ~L"eng" in iso6393_languages()
-  #       true
-
-  #   """
-  #   def iso6393_languages() do
-  #     for {_, entry} <- @languages,
-  #         is_binary(entry[:iso6391]),
-  #         uniq: true,
-  #         do: %Locale{code: entry.iso6393}
-  #   end
-
-  #   @doc """
-  #   Returns the text alignment.
-
-  #   ## Examples
-  #       iex> alignment(~L"ar")
-  #       :right_to_left
-
-  #       iex> alignment(~L"he")
-  #       :right_to_left
-
-  #       iex> alignment(~L"en")
-  #       :left_to_right
-
-  #       iex> alignment(~L"en-GB")
-  #       :left_to_right
-  #   """
-  #   def alignment(%Locale{code: code}) when code in @right_to_left_aligned, do: :right_to_left
-  #   def alignment(_), do: :left_to_right
 end

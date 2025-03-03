@@ -28,10 +28,12 @@ defmodule ExLang.ISO639 do
           }
         }
 
+  @external_resource "priv/ISO6391-direction.json"
+  @external_resource "priv/ISO6393.json"
+
   # Github: https://github.com/wooorm/iso-639-3/blob/main/iso6393.js
-  @external_resource "priv/iso6393.json"
   @iso639 :code.priv_dir(:ex_lang)
-          |> Path.join("iso6393.json")
+          |> Path.join("ISO6393.json")
           |> File.read!()
           |> JSON.decode!()
           |> Enum.reduce(%{}, fn x = %{"name" => label}, acc ->
@@ -46,6 +48,12 @@ defmodule ExLang.ISO639 do
               Map.put(acc, code, %{code: code, type: type, label: label, alts: codes})
             end)
           end)
+
+  # https://localizely.com/iso-639-1-list/
+  @directions :code.priv_dir(:ex_lang)
+              |> Path.join("ISO6391-direction.json")
+              |> File.read!()
+              |> JSON.decode!()
 
   @spec lookup(String.t()) :: match() | nil
   def lookup(code) do
@@ -62,6 +70,14 @@ defmodule ExLang.ISO639 do
     |> case do
       nil -> nil
       %{label: x} -> x
+    end
+  end
+
+  @spec alignment(String.t()) :: :ltr | :rtl | nil
+  def alignment(iso6391) do
+    case Map.get(@directions, iso6391) do
+      nil -> nil
+      x -> String.to_atom(x)
     end
   end
 end
