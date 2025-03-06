@@ -34,6 +34,13 @@ defmodule ExLang do
            |> Map.new()
            |> Map.merge(@app_scripts)
 
+  def parse(tag) do
+    {:ok, parse!(tag)}
+  rescue
+    e in ParseError ->
+      {:error, "unable to parse tag #{e.tag}: #{inspect(e.error)}"}
+  end
+
   @doc """
   Parses an BCP47 (RFC 5646) language code into a struct.
 
