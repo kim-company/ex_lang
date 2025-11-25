@@ -1,0 +1,1122 @@
+[
+  {
+    "code": "Adlm",
+    "number": 166,
+    "label": "Adlam"
+  },
+  {
+    "code": "Afak",
+    "number": 439,
+    "label": "Afaka"
+  },
+  {
+    "code": "Aghb",
+    "number": 239,
+    "label": "Caucasian Albanian"
+  },
+  {
+    "code": "Ahom",
+    "number": 338,
+    "label": "Ahom, Tai Ahom"
+  },
+  {
+    "code": "Arab",
+    "number": 160,
+    "label": "Arabic"
+  },
+  {
+    "code": "Aran",
+    "number": 161,
+    "label": "Arabic (Nastaliq variant)"
+  },
+  {
+    "code": "Armi",
+    "number": 124,
+    "label": "Imperial Aramaic"
+  },
+  {
+    "code": "Armn",
+    "number": 230,
+    "label": "Armenian"
+  },
+  {
+    "code": "Avst",
+    "number": 134,
+    "label": "Avestan"
+  },
+  {
+    "code": "Bali",
+    "number": 360,
+    "label": "Balinese"
+  },
+  {
+    "code": "Bamu",
+    "number": 435,
+    "label": "Bamum"
+  },
+  {
+    "code": "Bass",
+    "number": 259,
+    "label": "Bassa Vah"
+  },
+  {
+    "code": "Batk",
+    "number": 365,
+    "label": "Batak"
+  },
+  {
+    "code": "Beng",
+    "number": 325,
+    "label": "Bengali (Bangla)"
+  },
+  {
+    "code": "Berf",
+    "number": 258,
+    "label": "Beria Erfe"
+  },
+  {
+    "code": "Bhks",
+    "number": 334,
+    "label": "Bhaiksuki"
+  },
+  {
+    "code": "Blis",
+    "number": 550,
+    "label": "Blissymbols"
+  },
+  {
+    "code": "Bopo",
+    "number": 285,
+    "label": "Bopomofo"
+  },
+  {
+    "code": "Brah",
+    "number": 300,
+    "label": "Brahmi"
+  },
+  {
+    "code": "Brai",
+    "number": 570,
+    "label": "Braille"
+  },
+  {
+    "code": "Bugi",
+    "number": 367,
+    "label": "Buginese"
+  },
+  {
+    "code": "Buhd",
+    "number": 372,
+    "label": "Buhid"
+  },
+  {
+    "code": "Cakm",
+    "number": 349,
+    "label": "Chakma"
+  },
+  {
+    "code": "Cans",
+    "number": 440,
+    "label": "Unified Canadian Aboriginal Syllabics"
+  },
+  {
+    "code": "Cari",
+    "number": 201,
+    "label": "Carian"
+  },
+  {
+    "code": "Cham",
+    "number": 358,
+    "label": "Cham"
+  },
+  {
+    "code": "Cher",
+    "number": 445,
+    "label": "Cherokee"
+  },
+  {
+    "code": "Chis",
+    "number": 298,
+    "label": "Chisoi"
+  },
+  {
+    "code": "Chrs",
+    "number": 109,
+    "label": "Chorasmian"
+  },
+  {
+    "code": "Cirt",
+    "number": 291,
+    "label": "Cirth"
+  },
+  {
+    "code": "Copt",
+    "number": 204,
+    "label": "Coptic"
+  },
+  {
+    "code": "Cpmn",
+    "number": 402,
+    "label": "Cypro-Minoan"
+  },
+  {
+    "code": "Cprt",
+    "number": 403,
+    "label": "Cypriot syllabary"
+  },
+  {
+    "code": "Cyrl",
+    "number": 220,
+    "label": "Cyrillic"
+  },
+  {
+    "code": "Cyrs",
+    "number": 221,
+    "label": "Cyrillic (Old Church Slavonic variant)"
+  },
+  {
+    "code": "Deva",
+    "number": 315,
+    "label": "Devanagari (Nagari)"
+  },
+  {
+    "code": "Diak",
+    "number": 342,
+    "label": "Dives Akuru"
+  },
+  {
+    "code": "Dogr",
+    "number": 328,
+    "label": "Dogra"
+  },
+  {
+    "code": "Dsrt",
+    "number": 250,
+    "label": "Deseret (Mormon)"
+  },
+  {
+    "code": "Dupl",
+    "number": 755,
+    "label": "Duployan shorthand, Duployan stenography"
+  },
+  {
+    "code": "Egyd",
+    "number": 70,
+    "label": "Egyptian demotic"
+  },
+  {
+    "code": "Egyh",
+    "number": 60,
+    "label": "Egyptian hieratic"
+  },
+  {
+    "code": "Egyp",
+    "number": 50,
+    "label": "Egyptian hieroglyphs"
+  },
+  {
+    "code": "Elba",
+    "number": 226,
+    "label": "Elbasan"
+  },
+  {
+    "code": "Elym",
+    "number": 128,
+    "label": "Elymaic"
+  },
+  {
+    "code": "Ethi",
+    "number": 430,
+    "label": "Ethiopic (Geʻez)"
+  },
+  {
+    "code": "Gara",
+    "number": 164,
+    "label": "Garay"
+  },
+  {
+    "code": "Geok",
+    "number": 241,
+    "label": "Khutsuri (Asomtavruli and Nuskhuri)"
+  },
+  {
+    "code": "Geor",
+    "number": 240,
+    "label": "Georgian (Mkhedruli and Mtavruli)"
+  },
+  {
+    "code": "Glag",
+    "number": 225,
+    "label": "Glagolitic"
+  },
+  {
+    "code": "Gong",
+    "number": 312,
+    "label": "Gunjala Gondi"
+  },
+  {
+    "code": "Gonm",
+    "number": 313,
+    "label": "Masaram Gondi"
+  },
+  {
+    "code": "Goth",
+    "number": 206,
+    "label": "Gothic"
+  },
+  {
+    "code": "Gran",
+    "number": 343,
+    "label": "Grantha"
+  },
+  {
+    "code": "Grek",
+    "number": 200,
+    "label": "Greek"
+  },
+  {
+    "code": "Gujr",
+    "number": 320,
+    "label": "Gujarati"
+  },
+  {
+    "code": "Gukh",
+    "number": 397,
+    "label": "Gurung Khema"
+  },
+  {
+    "code": "Guru",
+    "number": 310,
+    "label": "Gurmukhi"
+  },
+  {
+    "code": "Hanb",
+    "number": 503,
+    "label": "Han with Bopomofo (alias for Han + Bopomofo)"
+  },
+  {
+    "code": "Hang",
+    "number": 286,
+    "label": "Hangul (Hangŭl, Hangeul)"
+  },
+  {
+    "code": "Hani",
+    "number": 500,
+    "label": "Han (Hanzi, Kanji, Hanja)"
+  },
+  {
+    "code": "Hano",
+    "number": 371,
+    "label": "Hanunoo (Hanunóo)"
+  },
+  {
+    "code": "Hans",
+    "number": 501,
+    "label": "Han (Simplified variant)"
+  },
+  {
+    "code": "Hant",
+    "number": 502,
+    "label": "Han (Traditional variant)"
+  },
+  {
+    "code": "Hatr",
+    "number": 127,
+    "label": "Hatran"
+  },
+  {
+    "code": "Hebr",
+    "number": 125,
+    "label": "Hebrew"
+  },
+  {
+    "code": "Hira",
+    "number": 410,
+    "label": "Hiragana"
+  },
+  {
+    "code": "Hluw",
+    "number": 80,
+    "label": "Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)"
+  },
+  {
+    "code": "Hmng",
+    "number": 450,
+    "label": "Pahawh Hmong"
+  },
+  {
+    "code": "Hmnp",
+    "number": 451,
+    "label": "Nyiakeng Puachue Hmong"
+  },
+  {
+    "code": "Hrkt",
+    "number": 412,
+    "label": "Japanese syllabaries (alias for Hiragana + Katakana)"
+  },
+  {
+    "code": "Hung",
+    "number": 176,
+    "label": "Old Hungarian (Hungarian Runic)"
+  },
+  {
+    "code": "Inds",
+    "number": 610,
+    "label": "Indus (Harappan)"
+  },
+  {
+    "code": "Ital",
+    "number": 210,
+    "label": "Old Italic (Etruscan, Oscan, etc.)"
+  },
+  {
+    "code": "Jamo",
+    "number": 284,
+    "label": "Jamo (alias for Jamo subset of Hangul)"
+  },
+  {
+    "code": "Java",
+    "number": 361,
+    "label": "Javanese"
+  },
+  {
+    "code": "Jpan",
+    "number": 413,
+    "label": "Japanese (alias for Han + Hiragana + Katakana)"
+  },
+  {
+    "code": "Jurc",
+    "number": 510,
+    "label": "Jurchen"
+  },
+  {
+    "code": "Kali",
+    "number": 357,
+    "label": "Kayah Li"
+  },
+  {
+    "code": "Kana",
+    "number": 411,
+    "label": "Katakana"
+  },
+  {
+    "code": "Kawi",
+    "number": 368,
+    "label": "Kawi"
+  },
+  {
+    "code": "Khar",
+    "number": 305,
+    "label": "Kharoshthi"
+  },
+  {
+    "code": "Khmr",
+    "number": 355,
+    "label": "Khmer"
+  },
+  {
+    "code": "Khoj",
+    "number": 322,
+    "label": "Khojki"
+  },
+  {
+    "code": "Kitl",
+    "number": 505,
+    "label": "Khitan large script"
+  },
+  {
+    "code": "Kits",
+    "number": 288,
+    "label": "Khitan small script"
+  },
+  {
+    "code": "Knda",
+    "number": 345,
+    "label": "Kannada"
+  },
+  {
+    "code": "Kore",
+    "number": 287,
+    "label": "Korean (alias for Hangul + Han)"
+  },
+  {
+    "code": "Kpel",
+    "number": 436,
+    "label": "Kpelle"
+  },
+  {
+    "code": "Krai",
+    "number": 396,
+    "label": "Kirat Rai"
+  },
+  {
+    "code": "Kthi",
+    "number": 317,
+    "label": "Kaithi"
+  },
+  {
+    "code": "Lana",
+    "number": 351,
+    "label": "Tai Tham (Lanna)"
+  },
+  {
+    "code": "Laoo",
+    "number": 356,
+    "label": "Lao"
+  },
+  {
+    "code": "Latf",
+    "number": 217,
+    "label": "Latin (Fraktur variant)"
+  },
+  {
+    "code": "Latg",
+    "number": 216,
+    "label": "Latin (Gaelic variant)"
+  },
+  {
+    "code": "Latn",
+    "number": 215,
+    "label": "Latin"
+  },
+  {
+    "code": "Leke",
+    "number": 364,
+    "label": "Leke"
+  },
+  {
+    "code": "Lepc",
+    "number": 335,
+    "label": "Lepcha (Róng)"
+  },
+  {
+    "code": "Limb",
+    "number": 336,
+    "label": "Limbu"
+  },
+  {
+    "code": "Lina",
+    "number": 400,
+    "label": "Linear A"
+  },
+  {
+    "code": "Linb",
+    "number": 401,
+    "label": "Linear B"
+  },
+  {
+    "code": "Lisu",
+    "number": 399,
+    "label": "Lisu (Fraser)"
+  },
+  {
+    "code": "Loma",
+    "number": 437,
+    "label": "Loma"
+  },
+  {
+    "code": "Lyci",
+    "number": 202,
+    "label": "Lycian"
+  },
+  {
+    "code": "Lydi",
+    "number": 116,
+    "label": "Lydian"
+  },
+  {
+    "code": "Mahj",
+    "number": 314,
+    "label": "Mahajani"
+  },
+  {
+    "code": "Maka",
+    "number": 366,
+    "label": "Makasar"
+  },
+  {
+    "code": "Mand",
+    "number": 140,
+    "label": "Mandaic, Mandaean"
+  },
+  {
+    "code": "Mani",
+    "number": 139,
+    "label": "Manichaean"
+  },
+  {
+    "code": "Marc",
+    "number": 332,
+    "label": "Marchen"
+  },
+  {
+    "code": "Maya",
+    "number": 90,
+    "label": "Mayan hieroglyphs"
+  },
+  {
+    "code": "Medf",
+    "number": 265,
+    "label": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)"
+  },
+  {
+    "code": "Mend",
+    "number": 438,
+    "label": "Mende Kikakui"
+  },
+  {
+    "code": "Merc",
+    "number": 101,
+    "label": "Meroitic Cursive"
+  },
+  {
+    "code": "Mero",
+    "number": 100,
+    "label": "Meroitic Hieroglyphs"
+  },
+  {
+    "code": "Mlym",
+    "number": 347,
+    "label": "Malayalam"
+  },
+  {
+    "code": "Modi",
+    "number": 324,
+    "label": "Modi, Moḍī"
+  },
+  {
+    "code": "Mong",
+    "number": 145,
+    "label": "Mongolian"
+  },
+  {
+    "code": "Moon",
+    "number": 218,
+    "label": "Moon (Moon code, Moon script, Moon type)"
+  },
+  {
+    "code": "Mroo",
+    "number": 264,
+    "label": "Mro, Mru"
+  },
+  {
+    "code": "Mtei",
+    "number": 337,
+    "label": "Meitei Mayek (Meithei, Meetei)"
+  },
+  {
+    "code": "Mult",
+    "number": 323,
+    "label": "Multani"
+  },
+  {
+    "code": "Mymr",
+    "number": 350,
+    "label": "Myanmar (Burmese)"
+  },
+  {
+    "code": "Nagm",
+    "number": 295,
+    "label": "Nag Mundari"
+  },
+  {
+    "code": "Nand",
+    "number": 311,
+    "label": "Nandinagari"
+  },
+  {
+    "code": "Narb",
+    "number": 106,
+    "label": "Old North Arabian (Ancient North Arabian)"
+  },
+  {
+    "code": "Nbat",
+    "number": 159,
+    "label": "Nabataean"
+  },
+  {
+    "code": "Newa",
+    "number": 333,
+    "label": "Newa, Newar, Newari, Nepāla lipi"
+  },
+  {
+    "code": "Nkdb",
+    "number": 85,
+    "label": "Naxi Dongba (naɕi toba, Nakhi Tomba)"
+  },
+  {
+    "code": "Nkgb",
+    "number": 420,
+    "label": "Naxi Geba (naɕi gʌba, 'Na-'Khi Ggŏ-baw, Nakhi Geba)"
+  },
+  {
+    "code": "Nkoo",
+    "number": 165,
+    "label": "N’Ko"
+  },
+  {
+    "code": "Nshu",
+    "number": 499,
+    "label": "Nüshu"
+  },
+  {
+    "code": "Ogam",
+    "number": 212,
+    "label": "Ogham"
+  },
+  {
+    "code": "Olck",
+    "number": 261,
+    "label": "Ol Chiki (Ol Cemet’, Ol, Santali)"
+  },
+  {
+    "code": "Onao",
+    "number": 296,
+    "label": "Ol Onal"
+  },
+  {
+    "code": "Orkh",
+    "number": 175,
+    "label": "Old Turkic, Orkhon Runic"
+  },
+  {
+    "code": "Orya",
+    "number": 327,
+    "label": "Oriya (Odia)"
+  },
+  {
+    "code": "Osge",
+    "number": 219,
+    "label": "Osage"
+  },
+  {
+    "code": "Osma",
+    "number": 260,
+    "label": "Osmanya"
+  },
+  {
+    "code": "Ougr",
+    "number": 143,
+    "label": "Old Uyghur"
+  },
+  {
+    "code": "Palm",
+    "number": 126,
+    "label": "Palmyrene"
+  },
+  {
+    "code": "Pauc",
+    "number": 263,
+    "label": "Pau Cin Hau"
+  },
+  {
+    "code": "Pcun",
+    "number": 15,
+    "label": "Proto-Cuneiform"
+  },
+  {
+    "code": "Pelm",
+    "number": 16,
+    "label": "Proto-Elamite"
+  },
+  {
+    "code": "Perm",
+    "number": 227,
+    "label": "Old Permic"
+  },
+  {
+    "code": "Phag",
+    "number": 331,
+    "label": "Phags-pa"
+  },
+  {
+    "code": "Phli",
+    "number": 131,
+    "label": "Inscriptional Pahlavi"
+  },
+  {
+    "code": "Phlp",
+    "number": 132,
+    "label": "Psalter Pahlavi"
+  },
+  {
+    "code": "Phlv",
+    "number": 133,
+    "label": "Book Pahlavi"
+  },
+  {
+    "code": "Phnx",
+    "number": 115,
+    "label": "Phoenician"
+  },
+  {
+    "code": "Plrd",
+    "number": 282,
+    "label": "Miao (Pollard)"
+  },
+  {
+    "code": "Piqd",
+    "number": 293,
+    "label": "Klingon (KLI pIqaD)"
+  },
+  {
+    "code": "Prti",
+    "number": 130,
+    "label": "Inscriptional Parthian"
+  },
+  {
+    "code": "Psin",
+    "number": 103,
+    "label": "Proto-Sinaitic"
+  },
+  {
+    "code": "Qaaa",
+    "number": 900,
+    "label": "Reserved for private use (start)"
+  },
+  {
+    "code": "Qabx",
+    "number": 949,
+    "label": "Reserved for private use (end)"
+  },
+  {
+    "code": "Ranj",
+    "number": 303,
+    "label": "Ranjana"
+  },
+  {
+    "code": "Rjng",
+    "number": 363,
+    "label": "Rejang (Redjang, Kaganga)"
+  },
+  {
+    "code": "Rohg",
+    "number": 167,
+    "label": "Hanifi Rohingya"
+  },
+  {
+    "code": "Roro",
+    "number": 620,
+    "label": "Rongorongo"
+  },
+  {
+    "code": "Runr",
+    "number": 211,
+    "label": "Runic"
+  },
+  {
+    "code": "Samr",
+    "number": 123,
+    "label": "Samaritan"
+  },
+  {
+    "code": "Sara",
+    "number": 292,
+    "label": "Sarati"
+  },
+  {
+    "code": "Sarb",
+    "number": 105,
+    "label": "Old South Arabian"
+  },
+  {
+    "code": "Saur",
+    "number": 344,
+    "label": "Saurashtra"
+  },
+  {
+    "code": "Sgnw",
+    "number": 95,
+    "label": "SignWriting"
+  },
+  {
+    "code": "Shaw",
+    "number": 281,
+    "label": "Shavian (Shaw)"
+  },
+  {
+    "code": "Shrd",
+    "number": 319,
+    "label": "Sharada, Śāradā"
+  },
+  {
+    "code": "Shui",
+    "number": 530,
+    "label": "Shuishu"
+  },
+  {
+    "code": "Sidd",
+    "number": 302,
+    "label": "Siddham, Siddhaṃ, Siddhamātṛkā"
+  },
+  {
+    "code": "Sidt",
+    "number": 180,
+    "label": "Sidetic"
+  },
+  {
+    "code": "Sind",
+    "number": 318,
+    "label": "Khudawadi, Sindhi"
+  },
+  {
+    "code": "Sinh",
+    "number": 348,
+    "label": "Sinhala"
+  },
+  {
+    "code": "Sogd",
+    "number": 141,
+    "label": "Sogdian"
+  },
+  {
+    "code": "Sogo",
+    "number": 142,
+    "label": "Old Sogdian"
+  },
+  {
+    "code": "Sora",
+    "number": 398,
+    "label": "Sora Sompeng"
+  },
+  {
+    "code": "Soyo",
+    "number": 329,
+    "label": "Soyombo"
+  },
+  {
+    "code": "Sund",
+    "number": 362,
+    "label": "Sundanese"
+  },
+  {
+    "code": "Sunu",
+    "number": 274,
+    "label": "Sunuwar"
+  },
+  {
+    "code": "Sylo",
+    "number": 316,
+    "label": "Syloti Nagri"
+  },
+  {
+    "code": "Syrc",
+    "number": 135,
+    "label": "Syriac"
+  },
+  {
+    "code": "Syre",
+    "number": 138,
+    "label": "Syriac (Estrangelo variant)"
+  },
+  {
+    "code": "Syrj",
+    "number": 137,
+    "label": "Syriac (Western variant)"
+  },
+  {
+    "code": "Syrn",
+    "number": 136,
+    "label": "Syriac (Eastern variant)"
+  },
+  {
+    "code": "Tagb",
+    "number": 373,
+    "label": "Tagbanwa"
+  },
+  {
+    "code": "Takr",
+    "number": 321,
+    "label": "Takri, Ṭākrī, Ṭāṅkrī"
+  },
+  {
+    "code": "Tale",
+    "number": 353,
+    "label": "Tai Le"
+  },
+  {
+    "code": "Talu",
+    "number": 354,
+    "label": "New Tai Lue"
+  },
+  {
+    "code": "Taml",
+    "number": 346,
+    "label": "Tamil"
+  },
+  {
+    "code": "Tang",
+    "number": 520,
+    "label": "Tangut"
+  },
+  {
+    "code": "Tavt",
+    "number": 359,
+    "label": "Tai Viet"
+  },
+  {
+    "code": "Tayo",
+    "number": 380,
+    "label": "Tai Yo"
+  },
+  {
+    "code": "Telu",
+    "number": 340,
+    "label": "Telugu"
+  },
+  {
+    "code": "Teng",
+    "number": 290,
+    "label": "Tengwar"
+  },
+  {
+    "code": "Tfng",
+    "number": 120,
+    "label": "Tifinagh (Berber)"
+  },
+  {
+    "code": "Tglg",
+    "number": 370,
+    "label": "Tagalog (Baybayin, Alibata)"
+  },
+  {
+    "code": "Thaa",
+    "number": 170,
+    "label": "Thaana"
+  },
+  {
+    "code": "Thai",
+    "number": 352,
+    "label": "Thai"
+  },
+  {
+    "code": "Tibt",
+    "number": 330,
+    "label": "Tibetan"
+  },
+  {
+    "code": "Tirh",
+    "number": 326,
+    "label": "Tirhuta"
+  },
+  {
+    "code": "Tnsa",
+    "number": 275,
+    "label": "Tangsa"
+  },
+  {
+    "code": "Todr",
+    "number": 229,
+    "label": "Todhri"
+  },
+  {
+    "code": "Tols",
+    "number": 299,
+    "label": "Tolong Siki"
+  },
+  {
+    "code": "Toto",
+    "number": 294,
+    "label": "Toto"
+  },
+  {
+    "code": "Tutg",
+    "number": 341,
+    "label": "Tulu-Tigalari"
+  },
+  {
+    "code": "Ugar",
+    "number": 40,
+    "label": "Ugaritic"
+  },
+  {
+    "code": "Vaii",
+    "number": 470,
+    "label": "Vai"
+  },
+  {
+    "code": "Visp",
+    "number": 280,
+    "label": "Visible Speech"
+  },
+  {
+    "code": "Vith",
+    "number": 228,
+    "label": "Vithkuqi"
+  },
+  {
+    "code": "Wara",
+    "number": 262,
+    "label": "Warang Citi (Varang Kshiti)"
+  },
+  {
+    "code": "Wcho",
+    "number": 283,
+    "label": "Wancho"
+  },
+  {
+    "code": "Wole",
+    "number": 480,
+    "label": "Woleai"
+  },
+  {
+    "code": "Xpeo",
+    "number": 30,
+    "label": "Old Persian"
+  },
+  {
+    "code": "Xsux",
+    "number": 20,
+    "label": "Cuneiform, Sumero-Akkadian"
+  },
+  {
+    "code": "Yezi",
+    "number": 192,
+    "label": "Yezidi"
+  },
+  {
+    "code": "Yiii",
+    "number": 460,
+    "label": "Yi"
+  },
+  {
+    "code": "Zanb",
+    "number": 339,
+    "label": "Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)"
+  },
+  {
+    "code": "Zinh",
+    "number": 994,
+    "label": "Code for inherited script"
+  },
+  {
+    "code": "Zmth",
+    "number": 995,
+    "label": "Mathematical notation"
+  },
+  {
+    "code": "Zsye",
+    "number": 993,
+    "label": "Symbols (Emoji variant)"
+  },
+  {
+    "code": "Zsym",
+    "number": 996,
+    "label": "Symbols"
+  },
+  {
+    "code": "Zxxx",
+    "number": 997,
+    "label": "Code for unwritten documents"
+  },
+  {
+    "code": "Zyyy",
+    "number": 998,
+    "label": "Code for undetermined script"
+  },
+  {
+    "code": "Zzzz",
+    "number": 999,
+    "label": "Code for uncoded script"
+  }
+]
