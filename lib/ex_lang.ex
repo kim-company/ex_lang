@@ -72,7 +72,7 @@ defmodule ExLang do
   def parse!(tag) when is_binary(tag) do
     parse_recursive!(
       tag,
-      %Locale{},
+      %Locale{original: tag},
       [
         &parse_primary/2,
         &parse_extended/2,
@@ -193,7 +193,7 @@ defmodule ExLang do
         if code == nil do
           {:error, "No iso6391/iso6392T/iso6393 code found for #{inspect(primary)}"}
         else
-          {%Locale{locale | primary: code}, rest}
+          {%{locale | primary: code}, rest}
         end
     end
   end
@@ -209,7 +209,7 @@ defmodule ExLang do
         {:error, "Extended tag #{inspect(extended)} is not a valid ISO6393 code"}
 
       true ->
-        {%Locale{locale | extended: extended}, rest}
+        {%{locale | extended: extended}, rest}
     end
   end
 
@@ -217,7 +217,7 @@ defmodule ExLang do
     if String.length(script) == 4 and String.capitalize(script) == script do
       case Map.get(@scripts, script) do
         nil -> {:error, "Script #{inspect(script)} not found"}
-        _ -> {%Locale{locale | script: script}, rest}
+        _ -> {%{locale | script: script}, rest}
       end
     else
       {locale, tags}
@@ -229,11 +229,11 @@ defmodule ExLang do
       String.length(region) == 2 ->
         case Map.get(@territories, region) do
           nil -> {:error, "Region #{inspect(region)} not found"}
-          _ -> {%Locale{locale | region: region}, rest}
+          _ -> {%{locale | region: region}, rest}
         end
 
       String.length(region) == 3 and match?({_, ""}, Integer.parse(region)) ->
-        {%Locale{locale | region: region}, rest}
+        {%{locale | region: region}, rest}
 
       true ->
         {locale, tags}
@@ -243,10 +243,10 @@ defmodule ExLang do
   defp parse_variant(locale, tags = [variant | rest]) do
     cond do
       String.length(variant) >= 4 and Regex.match?(~r/^\d+/, variant) ->
-        {%Locale{locale | variant: variant}, rest}
+        {%{locale | variant: variant}, rest}
 
       String.length(variant) > 4 and Regex.match?(~r/^[[:alpha:]]+$/, variant) ->
-        {%Locale{locale | variant: variant}, rest}
+        {%{locale | variant: variant}, rest}
 
       true ->
         {locale, tags}
@@ -255,7 +255,7 @@ defmodule ExLang do
 
   defp parse_extension(locale, tags = [singleton | rest]) do
     if String.length(singleton) == 1 do
-      {%Locale{locale | extension: {singleton, rest}}, []}
+      {%{locale | extension: {singleton, rest}}, []}
     else
       {locale, tags}
     end

@@ -3,6 +3,8 @@ defmodule ExLang.Locale do
   Structure of a language tag as described in RFC 5646.
   """
   @type t :: %ExLang.Locale{
+          # The original code
+          original: String.t() | nil,
           # The first subtag, always required. The code must appear in ISO 639-1 if present, then ISO 639-2/T, then ISO 639-3 if no previous code exists.
           primary: String.t(),
           # Used for specific dialects or closely related languages under a broader language umbrella. Typically a two-letter (en for English) or three-letter (haw for Hawaiian) code. Must be a ISO 639-3 code.
@@ -18,7 +20,7 @@ defmodule ExLang.Locale do
           extension: {String.t(), [String.t()]} | nil
         }
 
-  defstruct [:extended, :script, :region, :variant, :extension, primary: "und"]
+  defstruct [:original, :extended, :script, :region, :variant, :extension, primary: "und"]
 
   defimpl String.Chars do
     @impl true

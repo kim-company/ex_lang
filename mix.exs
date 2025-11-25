@@ -7,7 +7,7 @@ defmodule ExLang.MixProject do
     [
       app: :ex_lang,
       version: "2.1.0",
-      elixir: "~> 1.18.1",
+      elixir: "~> 1.18",
       start_permanent: Mix.env() == :prod,
       name: "ExLang",
       description: description(),
